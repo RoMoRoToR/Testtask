@@ -1,0 +1,34 @@
+# Путь к тренировочным данным (объединённый набор)
+train: merged/images/train
+
+# Путь к валидации и тесту
+val:   dataset/images/val
+test:  dataset/images/test
+
+# Число классов
+nc: 22
+
+# Названия классов в том же порядке, что в classes.txt
+names:
+  - dog
+  - person
+  - cat
+  - tv
+  - car
+  - meatballs
+  - marinara sauce
+  - tomato soup
+  - chicken noodle soup
+  - french onion soup
+  - chicken breast
+  - ribs
+  - pulled pork
+  - hamburger
+  - cavity
+  - tea
+  - salad_2
+  - lavash
+  - meat
+  - salad_1
+  - kharcho
+  - soup
