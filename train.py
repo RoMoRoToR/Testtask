@@ -5,7 +5,7 @@ from ultralytics import YOLO
 
 def main():
     # Параметры
-    exp_name = "food_exp_gpu"   # базовое имя эксперимента
+    exp_name = "food_exp_gpu"
     project  = "runs/train"
 
     # 1) Обучаем модель
@@ -20,9 +20,8 @@ def main():
         name=exp_name
     )
 
-    # 2) Находим папку эксперимента (самую свежую)
+
     exp_root = os.path.join(project)
-    # Сортируем по времени модификации и берём последний
     runs = sorted(
         (d for d in os.listdir(exp_root) if d.startswith(exp_name)),
         key=lambda d: os.path.getmtime(os.path.join(exp_root, d))
